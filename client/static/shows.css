@@ -1,0 +1,54 @@
+/* Main Page */
+
+.shows {
+  text-align: center;
+  padding: 14% 6%;
+}
+
+.title-show {
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-bottom: 17px;
+}
+
+/* Events */
+
+.date > ul li {
+  list-style: none;
+}
+
+.event-details > ul li {
+  list-style: none;
+}
+
+.event {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* For Each Show */
+
+.date {
+  text-align: left;
+}
+
+.event-details {
+  text-align: left;
+  margin-left: 37px;
+}
+
+.weekDay, .monthDate, .year {
+  font-size: 40px;
+}
+
+.eventPlace, .time {
+  font-size: 30px;
+}
+
+.address {
+  margin-top: 25px;
+  font-size: 18px;
+  text-transform: capitalize;
+}

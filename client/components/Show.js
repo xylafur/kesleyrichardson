@@ -1,24 +1,24 @@
 import React from 'react'
 
-const Show = () => {
-  return (
-    <div>
-      <div className="date">
-        <ul>
-          <li className="weekDay">THU</li>
-          <li className="monthDate">DEC. 29</li>
-          <li className="year">2016</li>
-        </ul>
+const Show = (props) => {
+    return (
+      <div className="event">
+        <div className="date">
+          <ul>
+            <li className="weekDay">{props.event.weekday.substring(0, 3).toUpperCase()}</li>
+            <li className="monthDate">{props.event.month.substring(0, 3).toUpperCase()}. {props.event.day}</li>
+            <li className="year">{props.event.year}</li>
+          </ul>
+        </div>
+        <div className="event-details">
+          <ul>
+            <li className="eventPlace">{props.event.place.toUpperCase()}</li>
+            <li className="time">{props.event.time}</li>
+            <li className="address">{props.event.address.toLowerCase()}</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li className="eventPlace">ANDERSON FAIR</li>
-          <li className="time">8:00 PM</li>
-          <li className="address">2007 Grant St. Houston, TX</li>
-        </ul>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Show

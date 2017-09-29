@@ -5,12 +5,13 @@ class Shows extends React.Component {
   constructor(props) {
     super(props)
   }
-
   render () {
     return (
-      <div>
-        <h1>Shows</h1>
-        <Show />
+      <div className="shows">
+        <h1 className="title-show">Shows</h1>
+        {
+          this.props.events.events.map((event, i) => <Show event={event} key={i}/>)
+        }
       </div>
     )
   }

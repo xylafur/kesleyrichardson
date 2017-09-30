@@ -35,6 +35,11 @@
   margin-bottom: 0;
 }
 
+.music-album:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .floatLeft {
   float: left;
   margin-left: 10%;

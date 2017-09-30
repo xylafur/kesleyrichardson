@@ -1,0 +1,50 @@
+.music {
+  text-align: center;
+  display: block;
+  /*position: absolute;*/
+  width: 100%;
+}
+
+.title-music {
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+/* Album */
+
+.album-name {
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.music-album {
+  text-transform: uppercase;
+  margin-top: 25px;
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+  display: inline-grid;
+  margin-bottom: 0;
+}
+
+.floatLeft {
+  float: left;
+  margin-left: 10%;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 14%;
+  position: relative;
+}
+
+.whoBy {
+  margin-top: -30px;
+}

@@ -1,0 +1,27 @@
+
+/* Writings, Prose, & Poetry */
+
+.writings {
+  padding: 14% 7%;
+  font-size: 24px;
+}
+
+.writings-kicker {
+  margin-top: 14%;
+  font-weight: 200;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+}
+
+.writings-quote {
+  font-weight: 200;
+  margin-bottom: 0;
+  font-size: 33px;
+}
+
+.final-quote {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}

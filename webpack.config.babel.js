@@ -9,9 +9,9 @@ module.exports = {
   module: {
     rules: [
       { test: /\.jsx?$/, exclude: [/node_modules/], use: [{ loader: 'babel-loader', options: { presets: ['es2015'] } }] },
-      { test: /\.css$/,exclude: [/node_modules/], use: ['style-loader', 'css-loader'] },
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+      { test: /\.(ttf|eot|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
     ]
   },
   devServer: {
@@ -19,6 +19,6 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    new HTMLWebpackPlugin({ title: 'Amandas Website' })
+    new HTMLWebpackPlugin({ title: 'Amandas Website'})
   ]
 }

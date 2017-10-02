@@ -1,16 +1,23 @@
 /* Main Page */
+.event {
+  width: 80%;
+  border-bottom: 1px solid rgba(248, 245, 245, 0.32);
+  padding: 3% 0%;
+}
 
 .shows {
   text-align: center;
-  padding: 14% 6%;
+  padding: 6% 10%;
+  padding-right: 10%;
 }
 
 .title-show {
-  font-size: 80px;
+  padding-right: 17%;
+  font-size: 90px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: auto;
-  margin-bottom: 17px;
+  margin-bottom: 30px;
 }
 
 /* Events */
@@ -54,8 +61,12 @@
 }
 
 .overlay2 {
-  background-color: rgba(0,0,0, 0.15);
+  background-color: rgba(0,0,0, 0.2);
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.event:last-child{
+  border-color: transparent;
 }

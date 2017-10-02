@@ -2,12 +2,12 @@
 /* Writings, Prose, & Poetry */
 
 .writings {
-  padding: 14% 7%;
+  padding: 5% 10% 5% 10%;
   font-size: 24px;
 }
 
 .writings-kicker {
-  margin-top: 14%;
+  margin-top: 8%;
   font-weight: 200;
   margin-bottom: -10px;
   text-transform: uppercase;
@@ -24,4 +24,8 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.5px;
+}
+
+.overlay5 {
+  background-color: rgba(0, 0, 0, 0.3);
 }

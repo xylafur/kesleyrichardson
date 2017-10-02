@@ -1,5 +1,5 @@
 const path = require('path')
-
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './client/index.js',
   output: {
@@ -13,5 +13,12 @@ module.exports = {
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
     ]
-  }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    historyApiFallback: true
+  },
+  plugins: [
+    new HTMLWebpackPlugin({ title: 'Amandas Website' })
+  ]
 }

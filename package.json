@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ceciliamvrie/Amandas-Website#readme",
   "dependencies": {
     "babel-preset-env": "^1.6.0",
+    "img-loader": "^2.0.0",
     "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
     "react": "^16.0.0",

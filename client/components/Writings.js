@@ -1,4 +1,5 @@
 import React from 'react'
+import layer4 from '../static/pictures/italy.jpg'
 
 class Writings extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Writings extends React.Component {
 
   render () {
     return (
-      <div className="writings">
+      <div className="writings" style={{"backgroundImage": "url(" + "'" + layer4 + "')", "backgroundSize":"cover", "backgroundColor": "rgba(0,0,0)", "opacity": "0.6", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundSize": "cover"}}>
         <h1 className="writings-kicker">Travels, Prose, and Poetry (AMANDAPASCALI.BLOGSPOT.COM)</h1>
         <h3 className="writings-quote">"I WAS BORN ALONG A DASHED, YELLOW LINE THAT RUNS STRAIGHT THROUGH THE HIGHWAY IN A LAND THAT ISN'T MINE."</h3>
         <p className="final-quote">"To me, instant coffee, the kind that comes in those little packets, the powder that you pour under

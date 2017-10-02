@@ -22,9 +22,7 @@ class App extends React.Component {
         <Home />
         <Shows events={events}/>
         <Music />
-        <ul style={{'listStyle': 'none'}}>
-          <li><Writings /></li>
-        </ul>
+        <Writings />
         <Footer />
       </div>
     )

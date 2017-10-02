@@ -1,4 +1,5 @@
 import React from 'react'
+import layer3 from '../static/pictures/veneziaboy.jpg'
 
 class Music extends React.Component {
   constructor(props) {
@@ -7,7 +8,8 @@ class Music extends React.Component {
 
   render() {
     return (
-      <div className="music">
+      <div style={{"backgroundImage": "url(" + "'" + layer3 + "')", "backgroundSize":"cover", "opacity": "0.9", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundSize": "cover"}}>
+      <div className="music overlay3">
         <h1 className="title-music">Music</h1>
         <div>
           <div className="floatLeft">
@@ -17,6 +19,7 @@ class Music extends React.Component {
           </div>
         </div>
       </div>
+    </div>
     )
   }
 }

@@ -7,29 +7,32 @@ class Contact extends React.Component {
     return (
       <div className="contact">
         <Nav />
-        <h1>Contact</h1>
+      <section id="hire">
+        <h1>Contact Me</h1>
         <form>
-          <label>Name *</label>
-          <div>
-            <input/> <input/>
-            <label>First Name</label> <label>Last Name</label>
-          </div>
-          <label>Email Address *</label>
-          <div>
-            <input/>
-          </div>
-          <label>Subject *</label>
-          <div>
-            <input/>
-          </div>
-          <label>Message *</label>
-          <div>
-            <input/>
-          </div>
-          <button type='submit'>Submit</button>
-        </form>
-        <Footer />
-      </div>
+	      <div className="field name-box">
+		        <input type="text" id="name" placeholder="Who Are You?"/>
+        		<label for="name">Name</label>
+		        <span className="ss-icon">check</span>
+	      </div>
+
+	      <div className="field email-box">
+		        <input type="text" id="email" placeholder="name@email.com"/>
+		        <label for="email">Email</label>
+		        <span className="ss-icon">check</span>
+	      </div>
+
+	      <div className="field msg-box">
+		        <textarea id="msg" rows="4" placeholder="Your message goes here..."/>
+		        <label for="msg">Msg</label>
+		        <span className="ss-icon">check</span>
+	      </div>
+
+	      <input className="button" type="submit" value="Send" />
+  </form>
+</section>
+<Footer />
+</div>
     )
   }
 }

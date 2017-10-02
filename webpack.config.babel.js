@@ -10,6 +10,7 @@ module.exports = {
     rules: [
       { test: /\.jsx?$/, exclude: [/node_modules/], use: [{ loader: 'babel-loader', options: { presets: ['es2015'] } }] },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
       { test: /\.(ttf|eot|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
     ]

@@ -12,7 +12,7 @@ import '../static/home.css'
 import '../static/music.css'
 import '../static/shows.css'
 import '../static/writings.css'
-import '../static/contact.css'
+import '../static/contact.scss'
 import '../static/media.css'
 
 class App extends React.Component {

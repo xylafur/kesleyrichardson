@@ -13,7 +13,7 @@ class Shows extends React.Component {
 
           <h1 className="title-show">Shows</h1>
           {
-            this.props.events.events.map((event, i) => <Show event={event} key={i}/>)
+            this.props.events.events.map((event, i) => <Show link={"https://maps.google.com/?q="+event.address} event={event} key={i}/>)
           }
         </div>
       </div>

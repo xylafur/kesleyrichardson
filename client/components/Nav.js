@@ -14,7 +14,7 @@ const Nav = () => {
         <nav>
           <div>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/" className='link'>Home</Link></li>
               <li>Shows</li>
               <li>Music</li>
             </ul>
@@ -25,8 +25,8 @@ const Nav = () => {
           <div>
             <ul>
               <li>Writing/Travels</li>
-              <li><Link to="/media">Media</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/media" className="link">Media</Link></li>
+              <li><Link to="/contact" className="link">Contact</Link></li>
             </ul>
           </div>
         </nav>

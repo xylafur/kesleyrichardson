@@ -41,6 +41,9 @@
 .music-album:hover {
   cursor: pointer;
   cursor: hand;
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+  background-color: rgba(113, 108, 108, 0.96);
 }
 
 .floatLeft {

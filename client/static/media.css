@@ -2,24 +2,34 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .box {
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 150px;
   background-color: grey;
   text-align: right;
   display: inline-block;
 }
 
 .box:hover {
+  height: 300px;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
 .media {
-  display: absolute;
   text-align: center;
-  font-size: 80px;
+  font-size: 11em;
+  padding: 4% 5%;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    /* height: 200px; */
+}
+
+h1.media {
+  opacity: 1;
+    margin: 10% 14%;
+    color: rgba(255, 235, 59, 0.6);
+    border: 2px solid rgba(255, 235, 59, 0.46);
 }
 
 .picture-name {
@@ -40,4 +50,9 @@
   z-index: -2000;
   position: relative;
   height: 300px;
+}
+
+.overlay-media {
+  position: relative;
+  color:white;
 }

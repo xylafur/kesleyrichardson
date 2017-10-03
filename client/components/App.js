@@ -14,6 +14,7 @@ import '../static/shows.css'
 import '../static/writings.css'
 import '../static/contact.scss'
 import '../static/media.css'
+import '../static/text-decorations.css'
 
 class App extends React.Component {
   render() {

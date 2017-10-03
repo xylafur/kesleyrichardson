@@ -14,7 +14,7 @@ const Show = (props) => {
           <ul>
             <li className="eventPlace">{props.event.place.toUpperCase()}</li>
             <li className="time">{props.event.time}</li>
-            <li className="address">{props.event.address.toLowerCase()}</li>
+            <li className="address"><a style={{"fontWeight": "500"}} href={props.link}>{props.event.address.toLowerCase()}</a></li>
           </ul>
         </div>
       </div>

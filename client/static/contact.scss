@@ -1,4 +1,6 @@
 // Grid
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
 @mixin grid($column) {
 	  width:(100% / 12) * $column;
 	  margin:0 auto;
@@ -14,19 +16,19 @@
 }
 
 //-- Lato --//
-@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
+@mixin lato-1 {font-family: 'Abel', 'Helvetica', 'Lato', sans-serif; font-weight:100;}
 @mixin lato-1-i {@include lato-1; font-style:italic;}
 
-@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
+@mixin lato-3 {font-family:  'Abel',  'Helvetica','Lato', sans-serif; font-weight:300;}
 @mixin lato-3-i {@include lato-3; font-style:italic;}
 
-@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
+@mixin lato-4 {font-family:   'Abel', 'Helvetica','Lato', sans-serif; font-weight:400;}
 @mixin lato-4-i {@include lato-4; font-style:italic;}
 
-@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
+@mixin lato-7 {font-family:  'Abel',  'Helvetica','Lato', sans-serif; font-weight:700;}
 @mixin lato-7-i {@include lato-7; font-style:italic;}
 
-@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
+@mixin lato-9 {font-family:   'Abel', 'Helvetica','Lato', sans-serif; font-weight:900;}
 @mixin lato-9-i {@include lato-9; font-style:italic;}
 
 
@@ -34,25 +36,40 @@
 	color: #fffdfd;
 	text-decoration: none;
 }
+
+a:hover {
+	transition-duration: 0.5s;
+  color: #f6eda8;
+}
+
 // Colors
-$blue:#313A3D;
-$orange:#FD9638;
+$blue: #000;
+$orange:#eded6d;
 $dark-orange:darken($orange, 20%);
 $grey:#fffdfd;
 $light-grey:lighten($grey, 15%);
 $background:#000;
 $field-color:#E8E9EA;
 
+.plz-contact {
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-weight: 200;
+}
 
+.email {
+	margin-bottom: 3%;
+}
 
 .contact {
   text-align: center;
 }
 .contact-title {
-  font-size: 30px;
-  text-transform: capitalize;
+	font-size: 70px;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 input.name {
 
@@ -72,7 +89,7 @@ body {
 	    background: rgba(0,0,0,0.6);
       margin:60px auto 120px;
       text-align:center;
-  	  padding:50px 0 110px;
+  	  padding:50px 0 10px;
       width:80%;
       max-width:1100px;
 
@@ -88,15 +105,15 @@ body {
 // Form
 form {
 		  @include grid(7);
-
+      margin-top: 5%;
 		  .field {
 			    width:100%;
 			    position:relative;
-			    margin-bottom:15px;
+			    margin-bottom:5%;
 
     			$hover-label-width:18%;
 			    $placeholder-bumper:1.5%;
-			    $label-padding:18px;
+			    $label-padding:17px;
 
     			// Label
 			    label {
@@ -106,7 +123,7 @@ form {
 				      left:0;
 				      background:$blue;
 				      width:100%;
-				      padding:($label-padding + 0px) 0;
+				      padding:($label-padding - 1px) 0;
 				      font-size: 1.45em;
 				      letter-spacing: 0.075em;
 
@@ -187,7 +204,7 @@ form {
 			    background:$orange;
 			    color:white;
 			    -webkit-appearance: none;
-			    border: none;
+			    border: 0.5px solid white;
 			    text-transform: uppercase;
     position:relative;
 		    padding: 13px 50px;

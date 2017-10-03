@@ -1,0 +1,33 @@
+.dashed:hover {
+  color: black;
+  transform: skew(20deg,10deg);
+  margin: 20px 20px 20px 20px;
+  transition-duration: 1s;
+}
+
+.dashed, .yellowLine, .instantCoffee, .boiling, .hot {
+  font-weight: 400;
+}
+
+.yellowLine:hover {
+  color: yellow;
+  transition-duration: 1s;
+  font-weight: 400;
+}
+
+.instantCoffee:hover {
+  transition-duration: 1s;
+  color: brown;
+}
+
+.boiling:hover {
+  transition-duration: 1s;
+  margin-left: 20px;
+  color: lightblue;
+}
+
+.hot:hover {
+  transition-duration: 1s;
+  margin-right: 20px;
+  color: red;
+}

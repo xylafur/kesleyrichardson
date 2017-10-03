@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
       <div className="footer" style={{"backgroundColor": "black"}}>
-        <p>Copyright 2017 <span className="my-link">Cecilia Cisneros</span></p>
+        <p><b style={{"margin-right": "20px"}}>Copyright 2017</b> <b>Made with ❤️ by <a href="#">Cecilia Cisneros</a></b> 👩🏻‍💻</p>
       </div>
     )
 }

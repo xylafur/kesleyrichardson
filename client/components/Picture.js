@@ -1,4 +1,5 @@
 import React from 'react'
+import flowers from '../static/pictures/flowers.jpg'
 
 class Picture extends React.Component {
   constructor(props) {
@@ -21,32 +22,36 @@ class Picture extends React.Component {
   }
   render() {
     var normal = {
+      "backgroundImage": `url('${flowers}')`,
+      "backgroundSize":"cover",
       "vertical-align": "center",
-      "background-color": "black",
-      "opacity": "0.8",
+      "background-color": "white",
+      "opacity": "0.6",
       "transition-duration": "1s",
     }
     var touched = {
-      "background-color": "black",
+      "backgroundImage": `url('${flowers}')`,
+      "backgroundSize":"cover",
+      "backgroundColor": "grey",
       "transform": "translatex(" + this.state.pageX/80 + "px) translatey("+ this.state.pageY/100 +"px)",
       "opacity": "1",
-      "transition-duration": "1s",
+      "transitionDuration": "1s",
       "transform": 'translatex(20px)'
     }
     var show = {
       "margin": "auto",
-      "margin-bottom": '10px',
+      "marginBottom": '10px',
       "color": "white",
       "opacity": '0',
-      "transition-duration": "1.2s",
+      "transitionDuration": "1.2s",
     }
     var noShow = {
      "margin": "auto",
-     "color": "black",
+     "color": "#c8c865",
      "opacity": '1',
-     "transition-duration": '0.5s',
+     "transitionDuration": '0.5s',
      "transform": "translateY(-10px)",
-     "padding-bottom": "30px"
+     "paddingBottom": "30px"
     }
     return (
       <div class="media-container">

@@ -9,11 +9,11 @@ import Contact from './components/Contact'
 class Routes extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
-          <Route exact path={process.env.PUBLIC_URL+"/"} component={App} />
-          <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
-          <Route path={process.env.PUBLIC_URL + "/media"} component={Media} />
+          <Route exact path="/" component={App} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/media" component={Media} />
         </div>
         {/* <Route path="*" component={NotFound} /> */}
       </Router>

@@ -1,5 +1,8 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+
 module.exports = {
   entry: './client/index.js',
   output: {
@@ -20,6 +23,15 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      pngquant: {
+        quality: '70-85'
+      }
+    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   test: /\.jsx?$/, exclude: [/node_modules/]
+    // }),
     new HTMLWebpackPlugin({ title: 'Amandas Website'})
   ]
 }

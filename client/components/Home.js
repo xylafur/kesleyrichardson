@@ -4,6 +4,12 @@ import Nav from './Nav'
 import layer1 from '../static/pictures/picture1.jpg'
 
 class Home extends React.Component {
+  componentDidMount() {
+    console.log('i did mount')
+  }
+  componentWillUnmount() {
+    console.log('i will unmout')
+  }
   render() {
     return (
       <div className="home" style={{"backgroundImage": "url(" + "'" + layer1 + "')", "backgroundSize":"cover", "opacity": "0.8", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat"}}>

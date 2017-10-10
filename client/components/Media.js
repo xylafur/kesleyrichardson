@@ -10,19 +10,27 @@ class Media extends React.Component {
 
   render () {
     var normal = {
+      "background-color": "black",
       "opacity": "1"
     }
     var touched = {
-      "background-color": "black",
-      "transform": "translatex(1.5px)",
-      "opacity": "0.8"
+      "opacity": "1"
     }
 
     return (
       <div>
         <Nav />
         <SimpleSlider />
-        <Picture />
+        <figure className="snip1446">
+          <figure className="snip1577">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg" />
+          <figcaption>
+            <h3>Bodrum Salvador</h3>
+            <h4>Luxery</h4>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+      </figure>
       </div>
     )
   }

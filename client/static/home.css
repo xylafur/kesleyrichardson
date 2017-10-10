@@ -51,6 +51,7 @@ nav {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  animation: 1.5s ease slidein;
 }
 
 nav ul {
@@ -119,4 +120,16 @@ nav li:hover {
 .overlay {
   background-color: rgba(0,0,0,0.6);
   padding: 0 0 5% 0;
+}
+
+@keyframes slidein {
+  from {
+    margin: -10% 50%;
+    width: 0%;
+  }
+
+  to {
+    margin: 0;
+    width: auto;
+  }
 }

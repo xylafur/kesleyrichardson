@@ -37,6 +37,10 @@
 	text-decoration: none;
 }
 
+.contactPic {
+	background-image: url('./pictures/Amanda1.jpg');
+}
+
 a:hover {
 	transition-duration: 0.5s;
   color: #f6eda8;
@@ -204,7 +208,7 @@ form {
 			    background:$orange;
 			    color:white;
 			    -webkit-appearance: none;
-			    border: 0.5px solid white;
+			    border: none;
 			    text-transform: uppercase;
     position:relative;
 		    padding: 13px 50px;
@@ -214,6 +218,7 @@ form {
 		    @include ease;
 
     			&:hover {
+						  border: 0.5px solid white;
 				      background:$blue;
 				      color:$orange;
 			    }

@@ -1,18 +1,13 @@
 import React from 'react'
 import FrontQuote from './FrontQuote'
 import Nav from './Nav'
-import layer1 from '../static/pictures/picture1.jpg'
+
 
 class Home extends React.Component {
-  componentDidMount() {
-    console.log('i did mount')
-  }
-  componentWillUnmount() {
-    console.log('i will unmout')
-  }
-  render() {
+  render(props) {
+    console.log(this.props)
     return (
-      <div className="home" style={{"backgroundImage": "url(" + "'" + layer1 + "')", "backgroundSize":"cover", "opacity": "0.8", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat"}}>
+      <div className="home" style={{"opacity": `${this.props.layer1 ? '0.8': '0.4'}`, "backgroundImage": `url(${this.props.layer1})`, "backgroundSize":"cover", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat"}}>
        <div className="overlay">
         <Nav />
         <div className="header">

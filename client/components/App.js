@@ -17,21 +17,42 @@ import '../static/contact.scss'
 import '../static/media.css'
 import '../static/text-decorations.css'
 
+var layer1 = require("bundle-loader?lazy!../static/pictures/picture1.jpg")
+var layer2 = require("bundle-loader?lazy!../static/pictures/backposition.jpg")
+var layer3 = require("bundle-loader?lazy!../static/pictures/veneziaboy.jpg")
+var layer4 = require("bundle-loader?lazy!../static/pictures/italy.jpg")
+
 class App extends React.Component {
   constructor(props) {
   super(props);
   this.state = {
-    shouldShow: false
+    shouldShow: false,
+    layer1: false,
+    layer2: false,
+    layer3: false,
+    layer4: false
   }
   this.handleScroll = this.handleScroll.bind(this);
 }
 
 componentDidMount() {
   window.addEventListener('scroll', this.handleScroll);
-}
-
-componentWillUnmount() {
-  window.removeEventListener('scroll', this.handleScroll);
+  layer1((file) => {
+    console.log(file)
+    this.setState({layer1: file})
+  })
+  layer2((file) => {
+    console.log(file)
+    this.setState({layer2: file})
+  })
+  layer3((file) => {
+    console.log(file)
+    this.setState({layer3: file})
+  })
+  layer4((file) => {
+    console.log(file)
+    this.setState({layer4: file})
+  })
 }
 
 handleScroll(event) {
@@ -47,13 +68,13 @@ handleScroll(event) {
   render() {
     return (
         <div>
-          <Home/>
+          <Home layer1={this.state.layer1}/>
         {
           this.state.shouldShow ? <Nav shouldShow="true" style={{"position":"fixed", "top": '0', "zIndex": '1', "backgroundColor": "black", "width": '100%'}}/>: null
         }
-        <Shows events={events}/>
-        <Music />
-        <Writings />
+        <Shows layer2={this.state.layer2} events={events}/>
+        <Music layer3={this.state.layer3}/>
+        <Writings layer4={this.state.layer4}/>
         <Footer />
       </div>
     )

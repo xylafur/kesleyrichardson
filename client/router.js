@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import App from './components/App'
 import Media from './components/Media'
 import Contact from './components/Contact'
-// import NotFound from './components/NotFound';
 
 const PUBLIC_URL = 'https://github.com/ceciliamvrie/amandapascali.github.io'
 class Routes extends Component {

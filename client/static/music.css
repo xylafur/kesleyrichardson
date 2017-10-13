@@ -36,17 +36,19 @@
   margin-top: 25px;
   height: 300px;
   width: 300px;
-  background-color: grey;
+  background-color: rgba(70, 67, 67, 0.8);
   display: inline-grid;
   margin-bottom: 0;
+  padding: 0;
 }
+
 
 .music-album:hover {
   cursor: pointer;
   cursor: hand;
   transform: scale(1.03);
   transition-duration: 0.5s;
-  background-color: rgba(113, 108, 108, 0.96);
+  background-color: rgba(50, 48, 48, 0.9);
 }
 
 .floatLeft {

@@ -8,7 +8,7 @@ class Shows extends React.Component {
   }
   render () {
     return (
-        <div style={{"backgroundImage": `url(${this.props.layer2})`, "backgroundSize":"cover", "backgroundColor": "rgba(0,0,0, 1)", "opacity": "0.8", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundSize": "cover", "textAlign": "center"}} className="overlay2">
+        <div style={{"backgroundImage": `url(${this.props.layer2})`, "backgroundSize":"cover", "backgroundColor": "rgba(0,0,0, 1)", "opacity": "0.66", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "backgroundSize": "cover", "textAlign": "center"}} className="overlay2">
       <div className="shows overlay2" >
 
           <h1 className="title-show">Shows</h1>

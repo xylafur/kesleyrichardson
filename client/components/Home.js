@@ -7,7 +7,7 @@ class Home extends React.Component {
   render(props) {
     console.log(this.props)
     return (
-      <div className="home" style={{"opacity": `${this.props.layer1 ? '0.8': '0.4'}`, "backgroundImage": `url(${this.props.layer1})`, "backgroundSize":"cover", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat"}}>
+      <div className="home" style={{"opacity": `${this.props.layer1 ? '0.7': '0.4'}`, "backgroundImage": `url(${this.props.layer1})`, "backgroundSize":"cover", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat"}}>
        <div className="overlay">
         <Nav />
         <div className="header">

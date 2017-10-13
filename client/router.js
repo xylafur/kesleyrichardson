@@ -15,7 +15,6 @@ class Routes extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/media" component={Media} />
         </div>
-        {/* <Route path="*" component= /> */}
       </Router>
     )
   }

@@ -51,7 +51,7 @@ nav {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  animation: 1.5s ease slidein;
+  animation: 0.8s ease slidein;
 }
 
 nav ul {

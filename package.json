@@ -29,8 +29,11 @@
     "react-router-native": "^4.2.0",
     "react-scroll-listener": "^0.6.0",
     "react-slick": "^0.15.4",
+    "react-video": "^1.5.3",
+    "redux": "^3.7.2",
     "slick-carousel": "^1.7.1",
-    "smoothscroll": "^0.3.0"
+    "smoothscroll": "^0.3.0",
+    "video-react": "^0.8.8"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,17 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick'
-// import Amanda2 from '../static/pictures/Amanda2.jpg'
-// import family from '../static/pictures/family.jpg'
-// import flowers from '../static/pictures/flowers.jpg'
-// import happyconcert from '../static/pictures/happyconcert.jpg'
-// import ocean from '../static/pictures/ocean.jpg'
-//
-var Amanda1 = require("bundle-loader?lazy!../static/pictures/Amanda1.jpg")
-var Amanda2 = require("bundle-loader?lazy!../static/pictures/Amanda2.jpg")
+
 var flowers = require("bundle-loader?lazy!../static/pictures/flowers.jpg")
 var family = require("bundle-loader?lazy!../static/pictures/family.jpg")
 var happyconcert = require("bundle-loader?lazy!../static/pictures/happyconcert.jpg")
-var ocean = require("bundle-loader?lazy!../static/pictures/ocean.jpg")
 
 class SimpleSlider extends React.Component {
   constructor(props) {
@@ -26,14 +18,6 @@ class SimpleSlider extends React.Component {
     }
   }
   componentDidMount() {
-    Amanda1((file) => {
-      console.log(file)
-      this.setState({amanda1: file})
-    })
-    Amanda2((file) => {
-      console.log(file)
-      this.setState({amanda2: file})
-    })
     flowers((file) => {
       console.log(file)
       this.setState({flowers: file})
@@ -45,10 +29,6 @@ class SimpleSlider extends React.Component {
     happyconcert((file) => {
       console.log(file)
       this.setState({happyconcert: file})
-    })
-    ocean((file) => {
-      console.log(file)
-      this.setState({ocean: file})
     })
   }
   render () {

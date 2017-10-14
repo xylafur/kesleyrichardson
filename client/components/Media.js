@@ -2,10 +2,63 @@ import React from 'react'
 import Nav from './Nav'
 import Picture from './Picture'
 import SimpleSlider from './Carousel'
+import Images from './Image'
+
+var flowers = require("bundle-loader?lazy!../static/pictures/flowers.jpg")
+var family = require("bundle-loader?lazy!../static/pictures/family.jpg")
+var happyconcert = require("bundle-loader?lazy!../static/pictures/happyconcert.jpg")
+var amanda1 = require("bundle-loader?lazy!../static/pictures/amanda1.jpg")
+var amanda2 = require("bundle-loader?lazy!../static/pictures/amanda2.jpg")
+var awwe = require("bundle-loader?lazy!../static/pictures/awwe.jpg")
+var prettyawesome = require("bundle-loader?lazy!../static/pictures/prettyawesome.jpg")
+var reallyprettypicture = require("bundle-loader?lazy!../static/pictures/reallyprettypicture.jpg")
+var italyletter = require("bundle-loader?lazy!../static/pictures/italyletter.jpg")
 
 class Media extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+    this.state = {
+      imageUris: []
+    }
+  }
+
+  componentDidMount() {
+    amanda1((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    amanda2((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    flowers((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    family((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    happyconcert((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    awwe((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    prettyawesome((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    reallyprettypicture((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
+    italyletter((file) => {
+      console.log(file)
+      this.setState({imageUris: this.state.imageUris.concat(file)})
+    })
   }
 
   render () {
@@ -21,16 +74,9 @@ class Media extends React.Component {
       <div>
         <Nav />
         <SimpleSlider />
-        <figure className="snip1446">
-          <figure className="snip1577">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg" />
-          <figcaption>
-            <h3>Bodrum Salvador</h3>
-            <h4>Luxery</h4>
-          </figcaption>
-          <a href="#"></a>
-        </figure>
-      </figure>
+       {
+         this.state.imageUris.map((uri) => <Images imageUri={uri}/>)
+       }
       </div>
     )
   }

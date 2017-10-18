@@ -29,9 +29,13 @@ module.exports = {
         quality: '60-85'
       }
     }),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   test: /\.jsx?$/, exclude: [/node_modules/]
-    // }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'bundle.js',
+      children: true
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      test: /\.jsx?$/, exclude: [/node_modules/]
+    }),
     new HTMLWebpackPlugin({ title: 'Amandas Website'})
   ]
 }

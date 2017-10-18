@@ -45,15 +45,15 @@ class Media extends React.Component {
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     awwe((file) => {
-      console.log(file)
+      console.log('hey this one!', file)
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     prettyawesome((file) => {
-      console.log(file)
+      console.log('hey this one!', file)
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     reallyprettypicture((file) => {
-      console.log(file)
+      console.log('hey this one!', file)
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     italyletter((file) => {
@@ -74,8 +74,8 @@ class Media extends React.Component {
     return (
       <div>
         <Nav />
-        <SimpleSlider />
-        <table>
+        <SimpleSlider/>
+        <table style={{'marginTop': '5%'}}>
         <tbody className="cards-container">
        {
          this.state.imageUris.reduce((acc, cur, i) => {

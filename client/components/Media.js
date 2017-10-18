@@ -18,7 +18,8 @@ class Media extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      imageUris: []
+      imageUris: [],
+      size: 3
     }
   }
 
@@ -74,9 +75,19 @@ class Media extends React.Component {
       <div>
         <Nav />
         <SimpleSlider />
+        <table>
+        <tbody className="cards-container">
        {
-         this.state.imageUris.map((uri) => <Images imageUri={uri}/>)
+         this.state.imageUris.reduce((acc, cur, i) => {
+           if(!(i % this.state.size)) {
+              acc.push(this.state.imageUris.slice(i, i + this.state.size))
+           }
+        return acc
+        }, [])
+        .map((row, i) => <tr key={i}>{ [...row].map(c => <td><Images imageUri={c}/></td>)}</tr>)
        }
+     </tbody>
+    </table>
       </div>
     )
   }

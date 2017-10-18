@@ -20,6 +20,12 @@
   cursor: pointer;
 }
 
+
+.cards-container {
+  padding: 30px;
+  overflow-x: hidden;
+}
+
 .media {
   text-align: center;
   font-size: 11em;
@@ -72,8 +78,8 @@ h1.media {
   display: inline-block;
   overflow: hidden;
   margin: 8px;
-  min-width: 380px;
-  max-width: 390px;
+  min-width: 300px;
+  max-width: 330px;
   width: 100%;
   color: #fff;
   text-align: left;

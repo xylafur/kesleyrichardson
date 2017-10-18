@@ -9,12 +9,9 @@ class SimpleSlider extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      amanda1: null,
-      amanda2: null,
       flowers: null,
       family: null,
-      happyconcert: null,
-      ocean: null
+      happyconcert: null
     }
   }
   componentDidMount() {

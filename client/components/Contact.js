@@ -8,9 +8,11 @@ class Contact extends React.Component {
       <div className="contact">
         <Nav />
       <section id="hire">
-        <h1 className="contact-title">Contact</h1>
-        <h2 className="plz-contact">For booking and press inquiries, please contact:</h2>
-        <h2 className="email">apascali72@gmail.com</h2>
+        <div className="closing-picture">
+          <h1 className="contact-title">Contact</h1>
+          <h2 className="plz-contact">For booking and press inquiries, please contact:</h2>
+          <h2 className="email">apascali72@gmail.com</h2>
+        </div>
         <form>
 	      <div className="field name-box">
 		        <input type="text" id="name" placeholder="Who Are You?"/>

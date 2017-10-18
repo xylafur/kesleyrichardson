@@ -13,8 +13,7 @@ class Images extends React.Component {
         <figcaption>
           <h3>{this.props.image}</h3>
           <h4>{this.props.date}</h4>
-        </figcaption>
-        <a href="#"></a>
+        </figcaption> 
       </figure>
     </figure>
     )

@@ -5,7 +5,7 @@ import App from './components/App'
 import Media from './components/Media'
 import Contact from './components/Contact'
 
-const PUBLIC_URL = 'https://ceciliamvrie.github.io/amandapascali/'
+const PUBLIC_URL = 'https://ceciliamvrie.github.io/amandapascali'
 class Routes extends Component {
   render() {
     return (

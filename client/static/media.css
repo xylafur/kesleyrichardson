@@ -208,3 +208,9 @@ h1.media {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+
+@media (max-width: 375px) {
+  .cards-container {
+    padding: 30%;
+  }
+}

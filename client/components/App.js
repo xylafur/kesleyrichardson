@@ -38,19 +38,19 @@ class App extends React.Component {
 componentDidMount() {
   window.addEventListener('scroll', this.handleScroll);
   layer1((file) => {
-    console.log(file)
+    console.log('this is pitcure 1', file)
     this.setState({layer1: file})
   })
   layer2((file) => {
-    console.log(file)
+    console.log('this is back position', file)
     this.setState({layer2: file})
   })
   layer3((file) => {
-    console.log(file)
+    console.log('this is veneziaboy', file)
     this.setState({layer3: file})
   })
   layer4((file) => {
-    console.log(file)
+    console.log('this is italy', file)
     this.setState({layer4: file})
   })
 }

@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 class Routes extends Component {
   render() {
     return (
-      <Router basename="/amandapascali">
+      <Router>
         <div>
           <Route exact path="/" component={App} />
           <Route path="/contact" component={Contact} />

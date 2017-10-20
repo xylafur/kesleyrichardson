@@ -26,11 +26,10 @@ module.exports = {
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       pngquant: {
-        quality: '60-85'
+        quality: '60-70'
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'bundle.js',
       children: true
     }),
     new webpack.optimize.UglifyJsPlugin({

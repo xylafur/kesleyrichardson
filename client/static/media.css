@@ -69,7 +69,7 @@ h1.media {
 }
 
 .snip1446:hover {
-  transform: scale(0.98);
+  transform: scale(1.10);
 }
 
 .snip1577 {
@@ -98,8 +98,11 @@ h1.media {
 
 .snip1577 img {
   max-width: 100%;
-  backface-visibility: hidden;
-  vertical-align: top;
+  vertical-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 10%;
+  filter: grayscale(100%);
 }
 
 /*.snip1577:before,
@@ -165,7 +168,7 @@ h1.media {
   background-position: center;
   zoom: 2;
   -webkit-opacity: 0.2;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   opacity: 0.9;
   width: 400px;
 }

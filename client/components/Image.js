@@ -3,6 +3,16 @@ import React from 'react'
 class Images extends React.Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      isClicked: false
+    }
+  }
+
+  isClicked() {
+    this.setState({
+      isClicked: !this.state.isClicked
+    })
   }
 
   render() {
@@ -10,7 +20,7 @@ class Images extends React.Component {
     return (
       <figure className="snip1446">
         <figure className="snip1577">
-        <img style={{ 'transform': `${style}` }} src={this.props.imageUri} />
+        <img onClick={this.isClicked.bind(this)} style={{ 'transform': `${style}`, 'backgroundPosition': 'cover', "width": '100%', 'display': 'fixed'}} src={this.props.imageUri} />
         <figcaption>
           <h3>{this.props.image}</h3>
           <h4>{this.props.date}</h4>

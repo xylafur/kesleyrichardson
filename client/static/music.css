@@ -5,6 +5,7 @@
   padding: 2% 0%;
   /*position: absolute;*/
   width: 100%;
+  /*height: auto;*/
 
 }
 
@@ -14,8 +15,6 @@
   letter-spacing: 2px;
   margin-bottom: 25px;
 }
-
-
 
 /* Album */
 
@@ -33,9 +32,9 @@
 
 .music-album {
   text-transform: uppercase;
-  margin-top: 25px;
-  height: 300px;
-  width: 300px;
+  margin-top: 10%;
+  height: 350px;
+  width: 550px;
   background-color: rgba(70, 67, 67, 0.8);
   display: inline-grid;
   margin-bottom: 0;
@@ -54,8 +53,8 @@
 .floatLeft {
   float: left;
   margin-left: 10%;
+  width: 50%;
   text-align: left;
-  width: 100%;
   display: block;
   margin-bottom: 14%;
   position: relative;

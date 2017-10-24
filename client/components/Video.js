@@ -7,10 +7,6 @@ class YouTube extends React.Component {
   playVideo(e) {
     console.log('heyyyyyy!',e)
     e.persist()
-    e.target.style.height= '400px';
-    e.target.style.width='70%';
-    e.target.children[0].style.height = '400px';
-    e.target.children[0].style.width = '80%';
     e.target.style.backgroundColor = 'black';
     e.target.play()
   }
@@ -21,8 +17,8 @@ class YouTube extends React.Component {
         this.props.rel + "&modestbranding=" +
         this.props.modest;
     return (
-      <div onClick={this.playVideo.bind(this)} className="music-album">
-        <iframe onClick={this.playVideo.bind(this)} style={{'margin': 'auto', 'height': '80%'}} type="text/html" src={videoSrc} frameborder="0"/>
+      <div onClick={this.playVideo.bind(this)} className="music-album" style={{backgroundColor: 'black'}}>
+        <iframe onClick={this.playVideo.bind(this)} style={{'margin': 'auto', 'height': '80%', width: '100%'}} type="text/html" src={videoSrc} frameborder="0"/>
       </div>
     );
   }

@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/ceciliamvrie/Amandas-Website#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "bandcamp-scraper": "^1.2.0",
     "img-loader": "^2.0.0",
     "jquery": "^3.2.1",
     "node-sass": "^4.5.3",

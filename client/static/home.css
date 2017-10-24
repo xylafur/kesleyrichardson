@@ -43,6 +43,10 @@
   background-color: rgba(152, 151, 95, 0.49)
 }
 
+.music-genre {
+  font-size: 30px;
+}
+
 /* Nav Bar */
 
 nav {

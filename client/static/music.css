@@ -30,6 +30,16 @@
   text-transform: uppercase;
 }
 
+.autocontrols {
+  background-color: 'black';
+}
+
+auto {
+  background-color: 'black';
+  width: 200px;
+  height: 32px;
+}
+
 .music-album {
   text-transform: uppercase;
   margin-top: 10%;

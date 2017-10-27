@@ -10,7 +10,7 @@ class SongsList extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      mp3s: [[FareTheeWell, 'Fare Thee Well'], [AlleyWays, 'In Between the Alleyways'], [Mihaela, 'Mihaela Mihaela'], [Ribella, 'Ribella'], [Venezia, 'Venezia Boy']]
+      mp3s: [[FareTheeWell, 'Fare Thee Well'], [Venezia, 'Venezia Boy'], [AlleyWays, 'In Between the Alleyways'], [Ribella, 'Ribella'], [Mihaela, 'Mihaela Mihaela']]
     }
   }
 

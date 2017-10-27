@@ -78,8 +78,7 @@ h1.media {
   display: inline-block;
   overflow: hidden;
   margin: 8px;
-  min-width: 300px;
-  max-width: 330px;
+  max-width: 100%;
   width: 100%;
   color: #fff;
   text-align: left;
@@ -99,8 +98,6 @@ h1.media {
 .snip1577 img {
   max-width: 100%;
   vertical-align: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
   height: 10%;
   filter: grayscale(100%);
 }
@@ -166,11 +163,9 @@ h1.media {
 .snip1577:hover img,
 .snip1577.hover img {
   background-position: center;
-  zoom: 2;
-  -webkit-opacity: 0.2;
+  transition-duration: 0.5s;
   filter: grayscale(0%);
   opacity: 0.9;
-  width: 400px;
 }
 
 .snip1577:hover:before,

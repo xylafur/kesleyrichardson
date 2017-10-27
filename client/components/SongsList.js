@@ -17,7 +17,7 @@ class SongsList extends React.Component {
   render() {
     return (
       <div>
-        <ul>
+        <ul class="songlist">
           {
             this.state.mp3s.map(mp3 => <Song mp3={mp3[0]} name={mp3[1]}/>)
           }

@@ -9,6 +9,10 @@
 
 }
 
+.songlist {
+  margin-left: 8%;
+}
+
 .title-music {
   font-size: 80px;
   text-transform: uppercase;
@@ -20,13 +24,18 @@
 
 .album-name {
   font-weight: 400;
-  margin-top: -15px;
-  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  font-size: 1.4em;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .author {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 2em;
+  margin-top: 12px;
+  font-weight: 500;
+  letter-spacing: 0.045em;
+  margin-bottom: -2px;
   text-transform: uppercase;
 }
 
@@ -43,8 +52,8 @@ auto {
 .music-album {
   text-transform: uppercase;
   margin-top: 10%;
-  height: 350px;
-  width: 550px;
+  height: 430px;
+  width: 706px;
   background-color: rgba(70, 67, 67, 0.8);
   display: inline-grid;
   margin-bottom: 0;
@@ -64,6 +73,7 @@ auto {
   float: left;
   margin-left: 10%;
   width: 50%;
+  height: 100%;
   text-align: left;
   display: block;
   margin-bottom: 14%;
@@ -71,7 +81,10 @@ auto {
 }
 
 .whoBy {
-  margin-top: -30px;
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .overlay3 {

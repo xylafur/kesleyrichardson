@@ -57,7 +57,7 @@ componentDidMount() {
 
 handleScroll(event) {
   console.log(window.scrollY)
-  if (window.scrollY >= document.getElementsByClassName('shows')[0].clientHeight - 200 ) {
+  if (window.scrollY >= document.getElementsByClassName('shows')[0].clientHeight - 500 ) {
     this.setState({shouldShow: true})
     console.log('the scroll things', event)
   } else {

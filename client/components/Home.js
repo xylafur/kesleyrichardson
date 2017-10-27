@@ -5,7 +5,6 @@ import Nav from './Nav'
 
 class Home extends React.Component {
   render(props) {
-    console.log(this.props)
     return (
       <div className="home" style={{"opacity": `${this.props.layer1 ? '0.6': '0.4'}`, "backgroundImage": `url(${this.props.layer1})`, "backgroundSize":"cover", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", 'height': `${window.innerHeight -2}px`}}>
        <div className="overlay" style={{'height': `${window.innerHeight -2}px`}}>

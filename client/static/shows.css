@@ -14,8 +14,10 @@
 
 .songName {
   font-weight: 100;
-  font-size: 28px;
+  font-size: 22px;
+  letter-spacing: 0.01em;
   margin-bottom: 12px;
+
 }
 
 .shows {
@@ -26,7 +28,7 @@
 
 .title-show {
   padding-right: 17%;
-  font-size: 90px;
+  font-size: 98px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: auto;

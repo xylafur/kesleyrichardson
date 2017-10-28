@@ -8,7 +8,7 @@ class Writings extends React.Component {
   render () {
     return (
       <div style={{"backgroundImage": `url(${this.props.layer4})`, "backgroundSize":"cover", "opacity": `${this.props.layer4 ? 0.7 : 0.4}`, "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "height": `${window.innerHeight -100}px`}}>
-      <div className="writings overlay5" style={{"height": `${window.innerHeight -300}px`}}>
+      <div className="writings overlay5" style={{"height": `${window.innerHeight -270}px`}}>
         <h1 className="writings-kicker">Travels, Prose, and Poetry <a href="http://amandapascali.blogspot.com/">(AMANDAPASCALI.BLOGSPOT.COM)</a></h1>
         <h3 className="writings-quote">"I WAS BORN ALONG A DASHED, YELLOW LINE THAT RUNS STRAIGHT THROUGH THE HIGHWAY IN A LAND THAT ISN'T MINE."</h3>
         <p className="final-quote">"To me, instant coffee, the kind that comes in those little packets, the powder that you pour under

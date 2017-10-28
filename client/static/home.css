@@ -11,7 +11,7 @@
 
 .name {
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
   font-size: 9em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -20,6 +20,7 @@
 .kicker {
   font-weight: 200;
   margin: auto;
+  margin-bottom: 0.2%;
   text-transform: uppercase;
   font-size: 3.2em;
   letter-spacing: 1.5px;
@@ -102,17 +103,19 @@ nav li:hover {
 }
 
 .quote {
-  margin-top: -40px;
-  line-height: 1.3em;
-  letter-spacing: 1.1px;
+  margin-top: -35px;
+  line-height: 1.2em;
+  letter-spacing: 0.1px;
   font-weight: 100;
-  font-size: 2.9em;
-  color: rgba(192, 188, 188, 0.84);
+  /* max-width: 809px; */
+  font-size: 2.8em;
+  color: rgba(192, 188, 188, 0.84)
 }
 
 .quotation {
-  font-size: 7.6em;
+  font-size: 5.6em;
   margin: auto;
+  margin-top: 5px;
   padding: auto;
   color: rgb(192, 188, 188);
 }

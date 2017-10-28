@@ -14,7 +14,7 @@
 }
 
 .title-music {
-  font-size: 80px;
+  font-size: 98px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 25px;
@@ -23,18 +23,18 @@
 /* Album */
 
 .album-name {
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.03em;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-top: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .author {
-  font-size: 1.8em;
+  font-size: 2em;
   margin-top: 11px;
   font-weight: 500;
-  letter-spacing: 0.040em;
+  /* letter-spacing: 0.02em; */
   margin-bottom: -2px;
   text-transform: uppercase;
 }
@@ -52,8 +52,8 @@ auto {
 .music-album {
   text-transform: uppercase;
   margin-top: 10%;
-  height: 420px;
-  width: 690px;
+  height: 387px;
+  width: 594px;
   background-color: rgba(70, 67, 67, 0.8);
   display: inline-grid;
   margin-bottom: 0;
@@ -81,7 +81,7 @@ auto {
 }
 
 .whoBy {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 100;
   margin-top: 4px;
   color: rgba(255, 255, 255, 0.76);

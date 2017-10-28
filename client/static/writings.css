@@ -2,13 +2,13 @@
 /* Writings, Prose, & Poetry */
 
 .writings {
-  padding: 5% 30% 5% 10%;
+  padding: 7% 24% 6% 10%;
   font-size: 24px;
 }
 
 .writings-kicker {
   margin-top: 8%;
-  font-size: 55px;
+  font-size: 43px;
   font-weight: 200;
   margin-bottom: -10px;
   text-transform: uppercase;
@@ -17,16 +17,17 @@
 .writings-quote {
   font-weight: 200;
   margin-bottom: 0;
-  font-size: 37px;
+  font-size: 28px;
 }
 
 .final-quote {
   font-weight: 200;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 30px;
   letter-spacing: 0.5px;
 }
 
 .overlay5 {
+  overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0.3);
 }

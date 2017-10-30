@@ -11,8 +11,8 @@
 
 .name {
   margin: auto;
-  margin-bottom: 13px;
-  font-size: 9em;
+  margin-bottom: 9px;
+  font-size: 8.6em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -22,7 +22,7 @@
   margin: auto;
   margin-bottom: 0.2%;
   text-transform: uppercase;
-  font-size: 3.2em;
+  font-size: 3.1em;
   letter-spacing: 1.5px;
 }
 
@@ -115,7 +115,7 @@ nav li:hover {
 .quotation {
   font-size: 5.6em;
   margin: auto;
-  margin-top: 5px;
+  margin-top: -10px;
   padding: auto;
   color: rgb(192, 188, 188);
 }

@@ -7,11 +7,10 @@
 }
 
 .writings-kicker {
-  margin-top: 10%;
+  margin-top: 8%;
   font-size: 39px;
   font-weight: 200;
   max-width: 700px;
-  margin-left: 10%;
   margin-bottom: -10px;
   text-transform: uppercase;
 }
@@ -19,14 +18,12 @@
 .writings-quote {
   font-weight: 200;
   margin-bottom: 0;
-  margin-left: 10%;
   max-width: 719px;
   font-size: 23px;
 }
 
 .final-quote {
   font-weight: 200;
-  margin-left: 10%;
   max-width: 722px;
   font-size: 18px;
   line-height: 30px;
@@ -35,5 +32,6 @@
 
 .overlay5 {
   overflow-y: hidden;
+  height: 440;
   background-color: rgba(0, 0, 0, 0.3);
 }

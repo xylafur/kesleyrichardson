@@ -28,9 +28,6 @@ class Nav extends React.Component {
   render() {
     return (
       <div style={this.props.style}>
-        {
-          console.log(this.props)
-        }
         <nav>
           <div>
             <ul>

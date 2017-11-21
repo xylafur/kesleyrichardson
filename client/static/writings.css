@@ -2,31 +2,39 @@
 /* Writings, Prose, & Poetry */
 
 .writings {
+  font-family: 'Montserrat', serif;
   padding: 7% 24% 6% 10%;
   font-size: 24px;
 }
 
 .writings-kicker {
-  margin-top: 8%;
+  font-family: 'Montserrat', serif;
+  margin-top: 3%;
+  position: absolute;
   font-size: 39px;
-  font-weight: 200;
-  max-width: 700px;
+  max-width: 750px;
   margin-bottom: -10px;
   text-transform: uppercase;
 }
 
 .writings-quote {
-  font-weight: 200;
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 12%;
   margin-bottom: 0;
-  max-width: 719px;
+  max-width: 750px;
   font-size: 23px;
 }
 
 .final-quote {
-  font-weight: 200;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  position: absolute;
   max-width: 722px;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 19%;
   letter-spacing: 0.5px;
 }
 
@@ -34,4 +42,19 @@
   overflow-y: hidden;
   height: 440;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.america1 {
+  position: absolute;
+  margin-top: 40%;
+  font-size: 19px
+}
+
+.america2 {
+  position: absolute;
+  font-size: 21px;
+}
+
+.america3 {
+  font-size: 22px;
 }

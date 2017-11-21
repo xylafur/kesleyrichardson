@@ -3,11 +3,22 @@ import FrontQuote from './FrontQuote'
 import Nav from './Nav'
 
 
-class Home extends React.Component {
-  render(props) {
+const Home  = ({ layer1 }) => {
+    const styles = {
+      home: {
+        'backgroundImage': `url(${layer1})`,
+        'backgroundSize': 'cover',
+        'backgroundAttachment': 'fixed',
+        'backgroundRepeat': 'no-repeat',
+        'paddingBottom': '0%'
+      },
+      overlay: {
+        'paddingBottom': '5%'
+      }
+    }
     return (
-      <div className="home" style={{"opacity": `${this.props.layer1 ? '0.6': '0.4'}`, "backgroundImage": `url(${this.props.layer1})`, "backgroundSize":"cover", "backgroundAttachment": "fixed", "backgroundRepeat": "no-repeat", "paddingBottom": '0%'}}>
-       <div className="overlay" style={{"paddingBottom": '5%'}}>
+      <div className="home" style={styles.home}>
+       <div className="overlay" style={styles.overlay}>
         <Nav />
         <div className="header">
           <h1 className="name">Amanda Pascali</h1>
@@ -17,7 +28,6 @@ class Home extends React.Component {
       </div>
       </div>
     )
-  }
 }
 
 export default Home

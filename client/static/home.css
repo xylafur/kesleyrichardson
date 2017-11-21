@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+td {
+    overflow: hidden;
+}
+
 .header {
   text-align: center;
   margin-top: 18%;
@@ -96,6 +100,7 @@ nav li:hover {
 /* Bottom Quote */
 
 .front-quote {
+  overflow: hidden;
   text-align: center;
   margin: auto;
   max-width: 900px;

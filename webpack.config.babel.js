@@ -15,7 +15,8 @@ module.exports = {
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|mp3|eot|svg|gif|png|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+      { test: /\.(ttf|eot|svg|gif|png|jpg|wav)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' },
+      { test: /\.(mp3|wav)?$/, loader: 'file-loader' }
     ]
   },
   devServer: {
@@ -31,9 +32,6 @@ module.exports = {
     }),
     new webpack.optimize.CommonsChunkPlugin({
       children: true
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      test: /\.jsx?$/, exclude: [/node_modules/]
     }),
     new HTMLWebpackPlugin({ title: 'Amandas Website'})
   ]

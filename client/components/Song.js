@@ -13,7 +13,7 @@ class Song extends React.Component {
     return (
       <div className="songsList">
         <h3 className="songName">{this.props.name}</h3>
-        <audio controls preload id="audiocontrols" style={{backgroundColor: 'transparent', borderColor: 'transparent'}}>
+        <audio controls preload="true" id="audiocontrols" style={{backgroundColor: 'transparent', borderColor: 'transparent'}}>
         <source src={this.props.mp3} type="audio/mpeg" />
         </audio>
       </div>

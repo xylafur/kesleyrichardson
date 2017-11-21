@@ -12,12 +12,11 @@ class SimpleSlider extends React.Component {
   }
   componentDidMount() {
     family((file) => {
-      console.log(file)
       this.setState({family: file})
     })
   }
   render () {
-    var settings = {
+  const settings = {
       dots: false,
       autoplay: true,
       infinite: true,
@@ -25,10 +24,23 @@ class SimpleSlider extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true
-    };
+    }
+  const styles = {
+    slider: {
+      "backgroundImage": `url(${this.state.family})`,
+      "backgroundSize": 'cover',
+      "opacity": '0.6',
+      "width": '100%',
+      "height": '100%'
+    }
+  }
     return (
       <Slider {...settings} style={{"height": "500px"}}>
-        <div className="overlay-media"><div className="slider" style={{"backgroundImage": `url(${this.state.family})`, "backgroundSize": "cover", "opacity": "0.6", "width": "100%", "height": "100%"}}><h1 className="media">Media</h1></div></div>
+        <div className="overlay-media">
+          <div className="slider" style={styles.slider}>
+            <h1 className="media">Media</h1>
+          </div>
+        </div>
       </Slider>
     )
   }

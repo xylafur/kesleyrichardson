@@ -5,7 +5,7 @@ class YouTube extends React.Component {
     super(props)
   }
   playVideo(e) {
-    console.log('heyyyyyy!',e)
+    // console.log('heyyyyyy!',e)
     e.persist()
     e.target.style.backgroundColor = 'black';
     e.target.play()
@@ -18,7 +18,7 @@ class YouTube extends React.Component {
         this.props.modest;
     return (
       <div onClick={this.playVideo.bind(this)} className="music-album" style={{backgroundColor: 'black'}}>
-        <iframe onClick={this.playVideo.bind(this)} style={{'margin': 'auto', 'height': '80%', width: '100%'}} type="text/html" src={videoSrc} frameborder="0"/>
+        <iframe onClick={this.playVideo.bind(this)} style={{'margin': 'auto', 'height': '80%', width: '100%'}} type="text/html" src={videoSrc} frameBorder="0"/>
       </div>
     );
   }

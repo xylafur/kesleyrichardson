@@ -73,6 +73,8 @@ h1.media {
 }
 
 .snip1577 {
+  transition-duration: 1s;
+  animation-duration: 1s;
   font-family: 'Montserrat', Arial, sans-serif;
   position: relative;
   display: inline-block;
@@ -97,6 +99,7 @@ h1.media {
 
 .snip1577 img {
   max-width: 100%;
+  margin-top: 14%;
   vertical-align: center;
   height: 10%;
   filter: grayscale(100%);

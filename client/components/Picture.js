@@ -13,7 +13,6 @@ class Picture extends React.Component {
 
   onHovered(e) {
     e.persist()
-    console.log(e.pageX, e.pageY)
     this.setState({hovering: true, pageX: e.pageX, pageY: e.pageY})
   }
 
@@ -22,21 +21,21 @@ class Picture extends React.Component {
   }
   render() {
     var normal = {
-      "backgroundImage": `url('${flowers}')`,
-      "backgroundSize":"cover",
-      "vertical-align": "center",
-      "background-color": "white",
-      "opacity": "0.6",
-      "transition-duration": "1s",
+      backgroundImage: `url('${flowers}')`,
+      backgroundSize: 'cover',
+      verticalAlign: 'center',
+      backgroundColor: 'white',
+      opacity: '0.6',
+      transitionDuration: '1s',
     }
     var touched = {
-      "backgroundImage": `url('${flowers}')`,
-      "backgroundSize":"cover",
-      "backgroundColor": "grey",
-      "transform": "translatex(" + this.state.pageX/80 + "px) translatey("+ this.state.pageY/100 +"px)",
-      "opacity": "1",
-      "transitionDuration": "1s",
-      "transform": 'translatex(20px)'
+      backgroundImage: `url('${flowers}')`,
+      backgroundSize: "cover",
+      backgroundColor: "grey",
+      transform: "translatex(" + this.state.pageX/80 + "px) translatey("+ this.state.pageY/100 +"px)",
+      opacity: "1",
+      transitionDuration: "1s",
+      transform: 'translatex(20px)'
     }
     var show = {
       "margin": "auto",

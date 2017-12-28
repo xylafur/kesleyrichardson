@@ -30,6 +30,14 @@ td {
   letter-spacing: 1.5px;
 }
 
+.home {
+  background-image: url('https://ucarecdn.com/e891bb07-54a0-4a07-9d21-08fb4fbb5b45/picture1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-bottom: 0%;
+}
+
 .header-button {
   letter-spacing: 3px;
   font-size: 14px;
@@ -61,6 +69,14 @@ nav {
   justify-content: space-around;
   text-align: center;
   animation: 0.8s ease slidein;
+}
+
+.navFixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
 }
 
 nav ul {
@@ -132,6 +148,7 @@ nav li:hover {
 
 .overlay {
   background-color: rgba(0,0,0,0.7);
+  padding-bottom: 5%;
 }
 
 @keyframes slidein {

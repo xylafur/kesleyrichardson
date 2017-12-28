@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
+import '../static/contact.scss'
 
 class Contact extends React.Component {
   // onSubmit(e) {

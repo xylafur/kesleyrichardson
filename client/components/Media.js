@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import '../static/media.css'
+
 import Nav from './Nav'
 import Picture from './Picture'
 import SimpleSlider from './Carousel'
@@ -60,39 +62,21 @@ class Media extends Component {
   }
 
   render () {
-    const styles = {
-      normal: {
-        "background-color": "black",
-        "opacity": "1"
-      },
-      touched: {
-        "opacity": "1"
-      },
-      imageCell: {
-        'overflowY': 'hidden'
-      },
-      table: {
-        'marginTop': '5%'
-      }
-    }
-
     return (
       <div>
         <Nav />
         <SimpleSlider/>
-        <table style={styles.table}>
+        <table style={{marginTop: '5%'}}>
         <tbody className="cards-container">
-       {
-         this.state.imageUris.reduce((acc, cur, i) => {
-           if(!(i % this.state.size)) {
-              acc.push(this.state.imageUris.slice(i, i + this.state.size))
-           }
-        return acc
-        }, [])
-        .map((row, i) => <tr style={styles.imageCell} key={i}>{ [...row].map(c => <td><Images imageUri={c}/></td>)}</tr>)
-       }
-     </tbody>
-    </table>
+          {
+            this.state.imageUris.reduce((acc, cur, i) => {
+              if(!(i % this.state.size)) { acc.push(this.state.imageUris.slice(i, i + this.state.size)) }
+              return acc
+             }, [])
+             .map((row, i) => <tr style={{overflowY: 'hidden'}} key={i}>{ [...row].map(c => <td><Images imageUri={c}/></td>)}</tr>)
+          }
+        </tbody>
+        </table>
       </div>
     )
   }

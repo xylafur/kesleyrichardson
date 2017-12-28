@@ -1,10 +1,6 @@
 import React from 'react'
 var smoothScroll = require('smoothscroll')
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Contact from './Contact'
 import Media from './Media'
 import Home from './Home'

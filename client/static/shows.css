@@ -9,14 +9,14 @@
   width: 100%;
   text-align: left;
   border-bottom: 1px solid rgba(248, 245, 245, 0.32);
-  padding: 8% 0% 2% 0%;
+  padding: 0% 0% 2% 0%;
 }
 
 .songName {
   font-weight: 100;
   font-size: 22px;
   letter-spacing: 0.01em;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 
 }
 
@@ -76,10 +76,14 @@
 }
 
 .overlay2 {
-  background-color: rgba(0,0,0, 0.2);
-  background-size: cover;
   width: 100%;
   height: 100%;
+  background-image: url("https://ucarecdn.com/01c2339a-9780-4d2a-bbad-2d6133706d4d/backposition.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 .event:last-child{

@@ -7,9 +7,18 @@
   font-size: 24px;
 }
 
+.writingsContainer {
+  background-image: url('https://ucarecdn.com/88803bfc-98a7-451b-bf22-154d30770791/italy.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 90%;
+  opacity: 1;
+}
+
 .writings-kicker {
   font-family: 'Montserrat', serif;
-  margin-top: 3%;
+  margin-top: 4%;
   position: absolute;
   font-size: 39px;
   max-width: 750px;
@@ -34,27 +43,27 @@
   max-width: 722px;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 19%;
+  margin-top: 17.7%;
   letter-spacing: 0.5px;
 }
 
 .overlay5 {
   overflow-y: hidden;
   height: 440;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .america1 {
   position: absolute;
-  margin-top: 40%;
+  margin-top: 38.5%;
   font-size: 19px
 }
 
 .america2 {
   position: absolute;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .america3 {
-  font-size: 22px;
+  font-size: 19px;
 }

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import flowers from '../static/pictures/flowers.jpg'
 
-class Picture extends React.Component {
+class Picture extends Component {
   constructor(props) {
     super(props)
     this.state = {

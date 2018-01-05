@@ -1,24 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 var smoothScroll = require('smoothscroll')
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Contact from './Contact'
 import Media from './Media'
 import Home from './Home'
 
-class Nav extends React.Component {
+class Nav extends Component {
   constructor(props) {
     super(props)
   }
   findShows() {
-    var height = document.getElementsByClassName('shows')[0].clientHeight + 30
+    const height = document.getElementsByClassName('shows')[0].clientHeight + 30
     smoothScroll(height, 700)
   }
   findMusic() {
-    var Musicheight = document.getElementsByClassName('overlay3')[0].offsetTop + 30
+    const Musicheight = document.getElementsByClassName('overlay3')[0].offsetTop + 30
     smoothScroll(Musicheight, 900);
   }
   findWritings() {
-    var WritingHeight = document.getElementsByClassName('overlay5')[0].offsetTop  + 30
+    const WritingHeight = document.getElementsByClassName('overlay5')[0].offsetTop  + 30
     smoothScroll(WritingHeight, 1000);
   }
   render() {

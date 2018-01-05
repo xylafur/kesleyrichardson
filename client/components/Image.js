@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import '../static/media.css'
 
 class Images extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isClicked: false
     }
@@ -20,7 +20,7 @@ class Images extends Component {
     return (
       <figure className="snip1446">
         <figure className="snip1577">
-        <img onClick={this.isClicked.bind(this)} style={{ 'transform': `${transform}`, 'backgroundPosition': 'cover', "width": '100%', 'overflow': 'hidden'}} src={this.props.imageUri} />
+        <img className="snip1446" onClick={this.isClicked.bind(this)} style={{ 'transform': `${transform}`}} src={this.props.imageUri} />
         <figcaption>
           <h3>{this.props.image}</h3>
           <h4>{this.props.date}</h4>

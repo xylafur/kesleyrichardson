@@ -9,6 +9,11 @@ td {
   width: 100%;
 }
 
+.song-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .musicContainer {
   opacity: 0.9;
   background-image: url('https://ucarecdn.com/714a1d02-59a5-4997-adc3-04ce1fb086d9/veneziaboy.jpg');
@@ -48,8 +53,10 @@ td {
   text-transform: uppercase;
 }
 
-.autocontrols {
+#autocontrols {
   background-color: 'black';
+  background-color: 'transparent';
+  border-color: 'transparent';
 }
 
 auto {

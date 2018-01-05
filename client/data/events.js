@@ -1,5 +1,5 @@
 export default {
-  "events": [
+  data: [
     {
       "weekday": "Saturday",
       "month": "October",

@@ -16,7 +16,7 @@ td {
 
 .musicContainer {
   opacity: 0.9;
-  background-image: url('https://ucarecdn.com/714a1d02-59a5-4997-adc3-04ce1fb086d9/veneziaboy.jpg');
+  background-image: url('https://res.cloudinary.com/ap-storage/image/upload/v1532115853/ap-music.jpg'); 
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

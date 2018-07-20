@@ -37,7 +37,7 @@ class Nav extends Component {
           </ul>
           <div>
             <ul>
-              <li onClick={this.findWritings.bind(this)}>Writing/Travels</li>
+              <li onClick={this.findWritings.bind(this)}>About</li>
               <li><Link to="/media" className="link">Media</Link></li>
               <li><Link to="/contact" className="link">Contact</Link></li>
             </ul>

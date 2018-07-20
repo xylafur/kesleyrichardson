@@ -31,7 +31,7 @@ td {
 }
 
 .home {
-  background-image: url('https://ucarecdn.com/e891bb07-54a0-4a07-9d21-08fb4fbb5b45/picture1.jpg');
+  background-image: url('https://res.cloudinary.com/ap-storage/image/upload/v1532115449/ap-home.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

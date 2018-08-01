@@ -44,7 +44,7 @@
   height: 100%;
   margin-top: -4%;
   padding-top: 40px;
-	background-image: url('https://ucarecdn.com/70b07d8b-92ef-4bb4-8be3-bc8ffc92d597/DSC_0025.JPG');
+	//background-image: url('https://ucarecdn.com/70b07d8b-92ef-4bb4-8be3-bc8ffc92d597/DSC_0025.JPG');
 	background-size: contain;
 	background-position: center;
 	background-attachment: fixed;
@@ -224,12 +224,12 @@ form {
 
 		  // Submit Button
 		  input[type="submit"] {
-			    background:$orange;
-			    color:white;
-			    -webkit-appearance: none;
-			    border: none;
-			    text-transform: uppercase;
-    position:relative;
+		    background:$orange;
+		    color:black;
+		    -webkit-appearance: none;
+		    border: none;
+		    text-transform: uppercase;
+    		position:relative;
 		    padding: 13px 50px;
 		    font-size: 1.4em;
 		    letter-spacing: 0.1em;
@@ -237,7 +237,7 @@ form {
 		    @include ease;
 
     			&:hover {
-						  border: 0.5px solid white;
+					  border: 0.5px solid white;
 				      background:$blue;
 				      color:$orange;
 			    }

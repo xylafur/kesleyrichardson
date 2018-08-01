@@ -10,7 +10,7 @@ const Home  = () => (
       <Nav />
       <div className="header">
          <h1 className="name">Amanda Pascali</h1>
-         <h3 className="kicker">Singer/Songwriter, Activist, Student of Natural Sciences.</h3>
+         <h3 className="kicker">Immigrant American Folk Music</h3>
       </div>
       <FrontQuote />
     </div>

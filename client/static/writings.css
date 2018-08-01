@@ -1,9 +1,13 @@
 
 /* Writings, Prose, & Poetry */
 
+#bio-wrapper {
+  overflow-y: scroll;
+}
+
 .writings {
   font-family: 'Montserrat', serif;
-  padding: 7% 24% 6% 10%;
+  padding: 160px 24% 6% 10%;
   font-size: 24px;
 }
 
@@ -12,16 +16,19 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: 30vw;
   height: 90%;
   opacity: 1;
 }
 
 .writings-kicker {
+  padding: 0% 24% 3% 10%;
+  font-size: 88px;
   font-family: 'Montserrat', serif;
-  margin-top: 4%;
+  /*margin-top: -4%;*/
+  letter-spacing: 2px;
   position: absolute;
-  font-size: 39px;
-  max-width: 750px;
+  max-width: 850px;
   margin-bottom: -10px;
   text-transform: uppercase;
 }
@@ -35,7 +42,16 @@
   max-width: 750px;
   font-size: 23px;
 }
-
+.bio-paragraph {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  /*position: absolute;*/
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  /*margin-top: 17.7%;*/
+  letter-spacing: 0.5px;
+}
 .final-quote {
   font-family: 'Montserrat', serif;
   font-weight: 400;
@@ -49,7 +65,7 @@
 
 .overlay5 {
   overflow-y: hidden;
-  height: 440;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 

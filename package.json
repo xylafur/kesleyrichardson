@@ -25,6 +25,7 @@
     "img-loader": "^2.0.0",
     "jquery": "^3.2.1",
     "node-libpng": "^0.2.4",
+    "luminous-lightbox": "^2.2.0",
     "node-sass": "^4.5.3",
     "react": "^16.0.0",
     "react-code-splitting": "^1.2.1",

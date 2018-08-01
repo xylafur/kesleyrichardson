@@ -6,6 +6,12 @@ import Picture from './Picture'
 import SimpleSlider from './Carousel'
 import Images from './Image'
 
+var LuminousGallery = require('luminous-lightbox').LuminousGallery;
+
+setTimeout(function() {
+  new LuminousGallery(document.querySelectorAll(".gallery-demo"), {arrowNavigation: true});
+}, 700);
+
 var flowers = require("bundle-loader?lazy!../static/pictures/flowers.jpg")
 var family = require("bundle-loader?lazy!../static/pictures/family.jpg")
 var happyconcert = require("bundle-loader?lazy!../static/pictures/happyconcert.jpg")
@@ -72,14 +78,18 @@ class Media extends Component {
             this.state.imageUris.reduce((acc, cur, i) => {
               if(!(i % this.state.size)) { acc.push(this.state.imageUris.slice(i, i + this.state.size)) }
               return acc
-             }, [])
-             .map((row, i) => <tr style={{overflowY: 'hidden'}} key={i}>{ [...row].map(c => <td><Images imageUri={c}/></td>)}</tr>)
-          }
+             }, []).map((row, i) => <tr style={{overflowY: 'hidden'}} key={i}>{[...row].map(c => <td key={c}><Images imageUri={c}/></td>)}</tr>)}
         </tbody>
         </table>
+        
+        <script>
+          
+        </script>
       </div>
     )
   }
 }
 
 export default Media
+
+

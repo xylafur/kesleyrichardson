@@ -14,6 +14,8 @@ const Show = ({ event, link }) => {
           <ul>
             <li className="eventPlace">{event.place.toUpperCase()}</li>
             <li className="time">{event.time}</li>
+            <li className="show-link"><a href={event.link} target="_blank">Tickets & RSVP</a></li>
+            <br/><br/>
             <li className="address"><a href={link}>{event.address.toLowerCase()}</a></li>
           </ul>
         </div>

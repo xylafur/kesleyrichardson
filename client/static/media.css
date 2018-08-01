@@ -1,6 +1,94 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.slider.media {
+  background-position: center;
+  background-size: contain;
+  height: 370px;
+}
+
+.lum-lightbox-inner img {
+    max-width: 60% !important;
+    max-height: 80% !important;
+}
+
+.lum-lightbox-image-wrapper {
+    background: rgba(0,0,0,0.7);
+}
+.lum-gallery-button {
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 0px;
+    padding: 0px;
+
+    display: inline-block;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff 0%,#fff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fff 0%,#fff 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #fff 0%,#fff 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #fff 0%,#fff 100%); /* W3C */
+    border: 1px solid #a1a1a1;
+    padding: 0 2em;
+    margin: 0.5em;
+    font: bold 1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    border-radius: 0px;
+}
+
+.lum-gallery-button:before {
+    float: left;
+    width: 1em;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0 0.5em 0 -1em;
+    padding: 0 .2em;
+    pointer-events: none;
+}
+
+.lum-previous-button {
+    opacity: 0.4;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: black;
+
+    position: fixed;
+    top: 50%;
+    left: 19.7%;
+}
+
+.lum-previous-button:hover {
+  opacity: 1;
+}
+
+.lum-previous-button:before {
+  content: "\2190"; 
+}
+
+.lum-next-button {
+    opacity: 0.4;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: black;
+
+    position: fixed;
+    top: 50%;
+    right: 19.7%;
+}
+
+.lum-next-button:hover {
+  opacity: 1;
+}
+
+.lum-next-button:before {
+  content: "\2192";
+}
+
 .box {
   /*position: absolute;*/
 	bottom: -20px;
@@ -28,19 +116,22 @@
 
 .media {
   text-align: center;
-  font-size: 11em;
-  padding: 4% 5%;
+  font-size: 4em;
+  /*padding: 4% 5%;*/
+  /*padding: 3vw 5%;*/
   text-transform: uppercase;
   letter-spacing: 2px;
     /* margin-bottom: 25px; */
-    /* height: 200px; */
+  height: 200px; 
 }
 
 h1.media {
   opacity: 1;
-    margin: 10% 14%;
-    color: rgba(255, 235, 59, 0.6);
-    border: 2px solid rgba(255, 235, 59, 0.46);
+  /*margin: 0% 14%;*/
+  margin: 5%;
+  margin-top: 70px;
+  color: rgba(255, 235, 59, 0.6);
+  border: 2px solid rgba(255, 235, 59, 0.46);
 }
 
 .picture-name {
@@ -60,15 +151,15 @@ h1.media {
   background-color: grey;
   z-index: -2000;
   position: relative;
-  height: 300px;
+  height: 100%;
   background-size: cover;
   opacity: 0.6;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .sliderContainer {
-  height: 500px;
+  height: 370px;
 }
 
 .overlay-media {
@@ -115,7 +206,7 @@ img.snip1446 {
   margin-top: 14%;
   vertical-align: center;
   height: 10%;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 /*.snip1577:before,
@@ -167,14 +258,14 @@ img.snip1446 {
   text-transform: uppercase;
 }
 
-.snip1577 a {
+/*.snip1577 a {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
-}
+}*/
 
 .snip1577:hover img,
 .snip1577.hover img {

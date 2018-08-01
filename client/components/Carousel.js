@@ -16,7 +16,7 @@ const SimpleSlider = () => {
   return (
     <Slider className="sliderContainer" {...settings}>
       <div className="overlay-media">
-        <div className="slider" style={{backgroundImage: `url(${family})`}}>
+        <div className="slider media" style={{backgroundImage: `url(${family})`}}>
           <h1 className="media">Media</h1>
         </div>
       </div>

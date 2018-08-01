@@ -3603,7 +3603,7 @@ var Home = function Home() {
         _react2.default.createElement(
           'h3',
           { className: 'kicker' },
-          'Singer/Songwriter, Activist, Student of Natural Sciences.'
+          'Immigrant American Folk Music'
         )
       ),
       _react2.default.createElement(_FrontQuote2.default, null)

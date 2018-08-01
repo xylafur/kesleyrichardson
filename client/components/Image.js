@@ -20,7 +20,9 @@ class Images extends Component {
     return (
       <figure className="snip1446">
         <figure className="snip1577">
-        <img className="snip1446" onClick={this.isClicked.bind(this)} style={{ 'transform': `${transform}`}} src={this.props.imageUri} />
+          <a className="gallery-demo" href={this.props.imageUri}>
+            <img className="snip1446" onClick={this.isClicked.bind(this)} style={{ 'transform': `${transform}`}} src={this.props.imageUri} />
+          </a>
         <figcaption>
           <h3>{this.props.image}</h3>
           <h4>{this.props.date}</h4>

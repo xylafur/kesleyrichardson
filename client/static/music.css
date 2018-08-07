@@ -16,7 +16,7 @@ td {
 
 .musicContainer {
   opacity: 0.9;
-  background-image: url('https://res.cloudinary.com/ap-storage/image/upload/v1532115853/ap-music.jpg'); 
+  background-image: url('/pictures/ap-music.jpg'); 
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

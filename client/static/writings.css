@@ -12,7 +12,7 @@
 }
 
 .writingsContainer {
-  background-image: url('https://res.cloudinary.com/ap-storage/image/upload/v1532115993/ap-bio.jpg');
+  background-image: url('/pictures/ap-bio.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -31,7 +31,7 @@ td {
 }
 
 .home {
-  background-image: url('https://res.cloudinary.com/ap-storage/image/upload/v1532115449/ap-home.jpg');
+  background-image: url('/pictures/ap-home.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -15,9 +15,7 @@ setTimeout(function() {
 var flowers = require("bundle-loader?lazy!../static/pictures/flowers.jpg")
 var family = require("bundle-loader?lazy!../static/pictures/family.jpg")
 var happyconcert = require("bundle-loader?lazy!../static/pictures/happyconcert.jpg")
-var amanda1 = require("bundle-loader?lazy!../static/pictures/Amanda1.jpg")
 var amanda2 = require("bundle-loader?lazy!../static/pictures/Amanda2.jpg")
-var awwe = require("bundle-loader?lazy!../static/pictures/awwe.jpg")
 var prettyawesome = require("bundle-loader?lazy!../static/pictures/prettyawesome.jpg")
 var reallyprettypicture = require("bundle-loader?lazy!../static/pictures/reallyprettypicture.jpg")
 var italyletter = require("bundle-loader?lazy!../static/pictures/italyletter.jpg")
@@ -38,9 +36,6 @@ class Media extends Component {
   }
 
   componentDidMount() {
-    amanda1((file) => {
-      this.setState({imageUris: this.state.imageUris.concat(file)})
-    })
     amanda2((file) => {
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
@@ -51,9 +46,6 @@ class Media extends Component {
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     happyconcert((file) => {
-      this.setState({imageUris: this.state.imageUris.concat(file)})
-    })
-    awwe((file) => {
       this.setState({imageUris: this.state.imageUris.concat(file)})
     })
     prettyawesome((file) => {

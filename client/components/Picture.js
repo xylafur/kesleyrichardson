@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import flowers from '../static/pictures/flowers.jpg'
+import flowers from '../static/pictures/sunset.jpg'
 
 class Picture extends Component {
   constructor(props) {

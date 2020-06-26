@@ -4,8 +4,8 @@ import '../static/footer.css'
 const Footer = () => (
   <div className="footer">
     <p>
-      <b className="copyRight">Copyright 2017</b>
-      <b>Made with ❤️ by <a href="#">Cecilia Cisneros</a></b> 👩🏻‍💻
+      <b className="copyRight">Copyright 2020</b>
+      <b>Made with ❤️ by <a href="https://github.com/ceciliamvrie">Cecilia Cisneros</a></b>
     </p>
   </div>
  )

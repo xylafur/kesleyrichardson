@@ -15,7 +15,7 @@ class YouTube extends Component {
     this.props.autoplay + "&rel=" +
     this.props.rel + "&modestbranding=" +
     this.props.modest;
-    
+
     return (
       <div onClick={this.playVideo.bind(this)} className="music-album" style={{backgroundColor: 'black'}}>
         <iframe onClick={this.playVideo.bind(this)} style={{margin: 'auto', height: '80%', width: '100%'}} type="text/html" src={videoSrc} frameBorder="0"/>

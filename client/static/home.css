@@ -31,11 +31,12 @@ td {
 }
 
 .home {
-  background-image: url('/pictures/ap-home.jpg');
+  background-image: url('/pictures/soldering.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding-bottom: 0%;
+  height: 100vh;
 }
 
 .header-button {

@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 var smoothScroll = require('smoothscroll')
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Contact from './Contact'
-import Media from './Media'
 import Home from './Home'
 
 class Nav extends Component {
   constructor(props) {
     super(props)
   }
-  findShows() {
-    const height = document.getElementsByClassName('shows')[0].clientHeight + 30
+  findProjects() {
+    const height = document.getElementsByClassName('overlay2')[0].clientHeight + 30
     smoothScroll(height, 700)
   }
   findMusic() {
@@ -28,17 +27,16 @@ class Nav extends Component {
           <div>
             <ul>
               <li><Link to="/" className='link'>Home</Link></li>
-              <li onClick={this.findShows.bind(this)}>Shows</li>
+              <li onClick={this.findProjects.bind(this)}>Projects</li>
               <li onClick={this.findMusic.bind(this)}>Music</li>
             </ul>
           </div>
           <ul>
-            <h4 className="nav-name">Amanda Pascali</h4>
+            <h4 className="nav-name">James Kesley Richardson</h4>
           </ul>
           <div>
             <ul>
               <li onClick={this.findWritings.bind(this)}>About</li>
-              <li><Link to="/media" className="link">Media</Link></li>
               <li><Link to="/contact" className="link">Contact</Link></li>
             </ul>
           </div>

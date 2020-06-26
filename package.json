@@ -1,7 +1,7 @@
 {
-  "name": "amandas-website",
+  "name": "kesley-richardson",
   "version": "1.0.0",
-  "description": "A website for Amanda Pascali",
+  "description": "A website for James Kesley Richardson",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 8080 --hot --host 0.0.0.0",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ceciliamvrie/Amandas-Website.git"
+    "url": "git+https://github.com/xylafur/kesleyrichardson.git"
   },
-  "author": "ceciliamvrie",
+  "author": "xylafur",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ceciliamvrie/Amandas-Website/issues"
+    "url": "https://github.com/xylafur/kesleyrichardson/issues"
   },
-  "homepage": "https://github.com/ceciliamvrie/Amandas-Website#readme",
+  "homepage": "https://github.com/xylafur/kesleyrichardson#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",

@@ -12,12 +12,12 @@
 }
 
 .writingsContainer {
-  background-image: url('/pictures/ap-bio.jpg');
+  background-image: url('/pictures/spirit.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 30vw;
-  height: 90%;
+  height: 20%;
   opacity: 1;
 }
 

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 import Home from './Home'
-import Shows from './Shows'
 import Music from './Music'
-import Writings from './Writings'
 import Footer from './Footer'
+import Projects from './Projects'
+import Writings from './Writings'
 
 import '../static/text-decorations.css'
 
@@ -20,7 +20,7 @@ class App extends Component {
     return (
         <div>
           <Home/>
-          <Shows/>
+          <Projects/>
           <Music/>
           <Writings/>
           <Footer />

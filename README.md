@@ -1,2 +1,2 @@
-# Amandas-Website
-A website for Amanda Pascali
+# James Kesley Richardson's Website
+A website for James Kesley Richardson
